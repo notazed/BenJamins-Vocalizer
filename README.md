@@ -10,7 +10,7 @@ You will also want to create a new blank **"autoexec.cfg"** file in that same fo
 #### TL:DR Instructions:
 1. Subscribe from the workshop
 2. Close your game
-3. Copy the [**benjaminsvocalizer.cfg**](https://raw.githubusercontent.com/notazed/BenJamins-Vocalizer/Advanced/BenJamin's%20Vocalizer%20-%20Advanced/cfg/benjaminsvocalizer.cfg) file into your **"...\Steam\steamapps\common\Left 4 Dead 2\left4dead2\cfg"** folder (save as benjaminsvocalizer.cfg NOT autoexec.cfg.txt)
+3. Copy the [**benjaminsvocalizer.cfg**](https://raw.githubusercontent.com/notazed/BenJamins-Vocalizer/Advanced/BenJamin's%20Vocalizer%20-%20Advanced/cfg/benjaminsvocalizer.cfg) file into your **"...\Steam\steamapps\common\Left 4 Dead 2\left4dead2\cfg"** folder (save as .cfg NOT .cfg.txt)
 4. Create an **autoexec.cfg** file in the same folder (if you don't already have one) and add a new line **"exec benjaminsvocalizer.cfg"** (save as autoexec.cfg NOT autoexec.cfg.txt)
 5. Start your game and GL&HF! ;)
 
