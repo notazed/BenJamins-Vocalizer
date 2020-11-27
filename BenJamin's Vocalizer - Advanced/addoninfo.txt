@@ -1,0 +1,50 @@
+"AddonInfo"
+{
+	"addonSteamAppID"					"550"	//Steam App ID: 500 for Left 4 Dead, 550 for Left 4 Dead 2
+	"addonTitle"						"BenJamin's Vocalizer - Advanced"	//Title of the addon, ~20 characters maximum
+	"addonVersion"						"1.0"	//Version number of the addon, <major>.<minor>
+	"addonTagline"						""	//Tagline/wrap-up short description, ~100 characters maximum
+	"addonAuthor"						"BenJamin'"	//Name of the author
+	"addonAuthorSteamID"				""	//(Optional) Steam ID of author. We use this to construct a URL to the author's page.
+	"addonSteamGroupName"				""	//(Optional) Steam group related to the add-on. We use this to construct a URL to the group page.
+	"addonURL0"							""	//Home page of addon with a download link
+
+	"addonContent_Campaign"				"0"	//If the addon is a series of connected maps with a finale
+	"addonContent_Survival"				"0"	//If the addon supports survival
+	"addonContent_Scavenge"				"0"	//If the addon supports scavenge
+	"addonContent_Versus"				"0"	//If the addon supports versus
+	"addonContent_Map"					"0"	//If the addon is a standalone map
+
+	"addonContent_Survivor"				"0"	//If the addon replaces a character model: 0=false, 1=true, String in quotes if replaces specific single character, i.e. "Coach"
+	"addonContent_Skin"					"0"	//If the addon provides a new skin: 0 for no new skin(s), 1 for multiple skins, string for single skin (the latter only on Left 4 Dead 2)
+
+	"addonContent_BossInfected"			"0"	//If the addon provides a new boss model
+	"addonContent_CommonInfected"		"0"	//If the addon provides a new common infected
+	"addonContent_Music"				"0"	//If the addon has custom music
+	"addonContent_Sound"				"0"	//If the addon has custom sounds
+	"addonContent_Prop"					"0"	//If the addon has custom props
+	"addonContent_Prefab"				"0"	//If the addon has custom prefabs
+	"addonContent_Spray"				"0"	//If the addon provides new sprays
+	"addonContent_Script"				"1"	//If the addon has scripts
+	"addonContent_BackgroundMovie"		"0"	//If the addon replaces the background movie
+
+	"addonContent_Weapon"				"0"	//If the addon provides a new weapon, i.e. guns, explosives, booby traps, hot tar, etc.
+	"addonContent_WeaponModel"			"0"	//If the addon overrides a weapon skin (for existing weapons)
+
+	"addonDescription"					"BenJamin's custom vocalizer; advanced version."	//Description of addon
+	//"addonDescription_DA"				""	//Danish description
+	//"addonDescription_NL"				""	//Dutch description
+	//"addonDescription_FI"				""	//Finnish description
+	//"addonDescription_FR"				""	//French description
+	//"addonDescription_DE"				""	//German description
+	//"addonDescription_IT"				""	//Italian description
+	//"addonDescription_JA"				""	//Japanese description
+	//"addonDescription_KO"				""	//Korean description
+	//"addonDescription_NO"				""	//Norwegian description
+	//"addonDescription_PL"				""	//Polish description
+	//"addonDescription_PT"				""	//Portuguese description
+	//"addonDescription_RU"				""	//Russian description
+	//"addonDescription_ZH"				""	//Chinese description
+	//"addonDescription_ES"				""	//Spanish description
+	//"addonDescription_SV"				""	//Swedish description
+}

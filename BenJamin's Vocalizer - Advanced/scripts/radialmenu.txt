@@ -1,0 +1,4147 @@
+//--------------------------------------------------------------
+//
+//	F1 - Vote Yes.
+//	F2 - Vote No.
+//	F3-F6 - Character specific quotes. (coming soon)
+//	F7 - Map/Gamemode Selector.
+//	F8 - Difficulty Selector.
+//	F9 - Character Selector.
+//
+//	Z - Default Survivor and Custom Infected Orders.
+//	X - Default Survivor and Custom Infected Q&A.
+//	V - Useful miscellaneous commands. "look out, help me, stay together" etc.
+//
+//	CAPSLOCK - Spotting infected. Alert your teammates of special infected or incoming hordes.
+//	ALT - Bot Commands & Max Melee Selector.
+//	B - Weapon Menu. Spawn weapons and ammo.
+//	N - Item Menu. Spawn equipment and upgrades.
+//	RALT - Spawn Menu. Warp survivors, toggle director and noclip, rotate props, etc.
+//
+//--------------------------------------------------------------
+
+"RadialMenu"
+{
+	//--------------------------------------------------------------
+	//# Survivor and Infected Orders
+	//--------------------------------------------------------------
+	"Orders,Survivor,Alive"
+	{
+		"Center"
+		{
+			"command"	"vocalize smartlook"
+			"text"		"#L4D_rosetta_look"
+		}
+		"North"
+		{
+			"command"	"vocalize PlayerMoveOn"
+			"text"		"#L4D_rosetta_letsgo"
+		}
+		"NorthEast"
+		{
+			"command"	"vocalize PlayerLeadOn"
+			"text"		"#L4D_rosetta_youtakelead"
+		}
+		"East"
+		{
+			"command"	"vocalize PlayerHurryUp"
+			"text"		"#L4D_rosetta_hurry"
+		}
+		"SouthEast"
+		{
+			"command"	"vocalize PlayerNiceJob"
+			"text"		"#L4D_rosetta_nicejob"
+		}
+		"South"
+		{
+			"command"	"vocalize PlayerWaitHere"
+			"text"		"#L4D_rosetta_waithere"
+		}
+		"SouthWest"
+		{
+			"command"	"vocalize PlayerToTheRescue"
+			"text"		"#L4D_rosetta_totherescue"
+		}
+		"West"
+		{
+			"command"	"vocalize PlayerWarnCareful"
+			"text"		"#L4D_rosetta_becareful"
+		}
+		"NorthWest"
+		{
+			"command"	"vocalize PlayerImWithYou"
+			"text"		"#L4D_rosetta_withyou"
+		}
+	}
+	//--------------------------------------------------------------
+	"Orders,Infected"
+	{
+		"Center"
+		{
+			"command"	"say_team Wait for the horde to attack.; "
+			"text"		"Wait for Horde"
+		}
+		"North"
+		{
+			"command"	"say_team Wait for Smoker to attack.; "
+			"text"		"Wait for Smoker"
+		}
+		"NorthEast"
+		{
+			"command"	"say_team Wait for Witch to attack.; "
+			"text"		"Wait for Witch"
+		}
+		"East"
+		{
+			"command"	"say_team Wait for Boomer to attack.; "
+			"text"		"Wait for Boomer"
+		}
+		"SouthEast"
+		{
+			"command"	"say_team Wait for Spitter to attack.; "
+			"text"		"Wait for Spitter"
+		}
+		"South"
+		{
+			"command"	"say_team Wait for Charger to attack.; "
+			"text"		"Wait for Charger"
+		}
+		"SouthWest"
+		{
+
+			"command"	"say_team Wait for Jockey to attack.; "
+			"text"		"Wait for Jockey"
+		}
+		"West"
+		{
+			"command"	"say_team Wait for Hunter to attack.; "
+			"text"		"Wait for Hunter"
+		}
+		"NorthWest"
+		{
+			"command"	"say_team Wait for Tank to attack.; "
+			"text"		"Wait for Tank"
+		}
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	//# Survivor and Infected QA
+	//--------------------------------------------------------------
+	"QA,Survivor,Alive"
+	{
+		"Center"
+		{
+			"command"	"vocalize PlayerAskReady"
+			"text"		"#L4D_rosetta_ready"
+		}
+		"North"
+		{
+			"command"	"vocalize PlayerLaugh"
+			"text"		"#L4D_rosetta_laugh"
+		}
+		"NorthEast"
+		{
+			"command"	"vocalize PlayerTaunt"
+			"text"		"#L4D_rosetta_taunt"
+		}
+		"East"
+		{
+			"command"	"vocalize PlayerNegative"
+			"text"		"#L4D_rosetta_negative"
+		}
+		"SouthEast"
+		{
+			"command"	"vocalize PlayerNo"
+			"text"		"#L4D_rosetta_no"
+		}
+		"South"
+		{
+			"command"	"vocalize PlayerSorry"
+			"text"		"#L4D_rosetta_sorry"
+		}
+		"SouthWest"
+		{
+			"command"	"vocalize PlayerYes"
+			"text"		"#L4D_rosetta_yes"
+		}
+		"West"
+		{
+			"command"	"vocalize PlayerHurrah"
+			"text"		"#L4D_rosetta_hurrah"
+		}
+		"NorthWest"
+		{
+			"command"	"vocalize PlayerThanks"
+			"text"		"#L4D_rosetta_thankyou"
+		}
+	}
+	//--------------------------------------------------------------
+	"QA,Infected"
+	{
+		"Center"
+		{
+			"command"	"say_team Attack the weakest.; "
+			"text"		"Weakest"
+		}
+		"North"
+		{
+			"command"	"say_team Attack Nick.; "
+			"text"		"Nick"
+		}
+		"NorthEast"
+		{
+			"command"	"say_team Attack Bill.; "
+			"text"		"Bill"
+		}
+		"East"
+		{
+			"command"	"say_team Attack Ellis.; "
+			"text"		"Ellis"
+		}
+		"SouthEast"
+		{
+			"command"	"say_team Attack Louis.; "
+			"text"		"Louis"
+		}
+		"South"
+		{
+			"command"	"say_team Attack Rochelle.; "
+			"text"		"Rochelle"
+		}
+		"SouthWest"
+		{
+			"command"	"say_team Attack Francis.; "
+			"text"		"Francis"
+		}
+		"West"
+		{
+			"command"	"say_team Attack Coach.; "
+			"text"		"Coach"
+		}
+		"NorthWest"
+		{
+			"command"	"say_team Attack Zoey.; "
+			"text"		"Zoey"
+		}
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	//# Miscellaneous Commands
+	//--------------------------------------------------------------
+	"Misc,Survivor,Alive"
+	{
+		"Center"
+		{
+			"command"	"vocalize PlayerLookOut"
+			"text"		"Look out!"
+		}
+		"North"
+		{
+			"command"	"vocalize PlayerWatchOutBehind"
+			"text"		"Behind us!"
+		}
+		"NorthEast"
+		{
+			"command"	"vocalize PlayerDeath"
+			"text"		"Death scream"
+		}
+		"East"
+		{
+			"command"	"vocalize PlayerCoverMe"
+			"text"		"Cover me!"
+		}
+		"SouthEast"
+		{
+			"command"	"vocalize PlayerThisWay"
+			"text"		"This way!"
+		}
+		"South"
+		{
+			"command"	"vocalize PlayerYellRun"
+			"text"		"Run!"
+		}
+		"SouthWest"
+		{
+			"command"	"vocalize PlayerAreaClear"
+			"text"		"Area clear"
+		}
+		"West"
+		{
+			"command"	"vocalize PlayerHelp"
+			"text"		"Help me!"
+		}
+		"NorthWest"
+		{
+			"command"	"vocalize PlayerStayTogether"
+			"text"		"Stay together"
+		}
+	}
+	//--------------------------------------------------------------
+	"Misc,Infected"
+	{
+		"Center"
+		{
+			"command"	"say_team Get ready...; "
+			"text"		"Get Ready"
+		}
+		"North"
+		{
+			"command"	"say_team Attack now.; "
+			"text"		"Attack Now"
+		}
+		"NorthEast"
+		{
+			"command"	"say_team Good job.; "
+			"text"		"Good Job"
+		}
+		"East"
+		{
+			"command"	"say_team Separate them.; "
+			"text"		"Separate Them"
+		}
+		"SouthEast"
+		{
+			"command"	"say_team No.; "
+			"text"		"No"
+		}
+		"South"
+		{
+			"command"	"say_team Wait to ambush.; "
+			"text"		"Wait"
+		}
+		"SouthWest"
+		{
+			"command"	"say_team Yes.; "
+			"text"		"Yes"
+		}
+		"West"
+		{
+			"command"	"say_team Attack together.; "
+			"text"		"Attack Together"
+		}
+		"NorthWest"
+		{
+			"command"	"say_team Sorry.; "
+			"text"		"Sorry"
+		}
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	//# Map/Gamemode Selector
+	//--------------------------------------------------------------
+	"Gamemodes"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[GAMEMODES]"
+		}
+		"North"
+		{
+			"command"	"+mouse_menu MapsMenu3a"
+			"text"		"Versus"
+		}
+		"NorthEast"
+		{
+			"command"	"+mouse_menu MapsMenu2a"
+			"text"		"Realism"
+		}
+		"East"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthEast"
+		{
+			"command"	"+mouse_menu MapsMenu5a"
+			"text"		"Survival"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu MapsMenu4a"
+			"text"		"Scavenge"
+		}
+		"West"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu1a"
+			"text"		"Campaign"
+		}
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	// L4D1 - Campaign Maps
+	//--------------------------------------------------------------
+	"MapsMenu1a"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[MAPS]"
+		}
+		"North"
+		{
+			"command"	"+mouse_menu c8_coop_radial"
+			"text"		"No Mercy"
+		}
+		"NorthEast"
+		{
+			"command"	"+mouse_menu c9_coop_radial"
+			"text"		"Crash Course"
+		}
+		"East"
+		{
+			"command"	"+mouse_menu c10_coop_radial"
+			"text"		"Death Toll"
+		}
+		"SouthEast"
+		{
+			"command"	"+mouse_menu c11_coop_radial"
+			"text"		"Dead Air"
+		}
+		"South"
+		{
+			"command"	"+mouse_menu c12_coop_radial"
+			"text"		"Blood Harvest"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c7_coop_radial"
+			"text"		"The Sacrifice"
+		}
+		"West"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu1b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D1 - Campaign - No Mercy
+	//--------------------------------------------------------------
+	"c8_coop_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[NO MERCY]"
+		}
+		"North"
+		{
+			"command"	"map c8m1_apartment coop; "
+			"text"		"Apartments"
+		}
+		"NorthEast"
+		{
+			"command"	"map c8m2_subway coop; "
+			"text"		"Subway"
+		}
+		"East"
+		{
+			"command"	"map c8m3_sewers coop; "
+			"text"		"Sewer"
+		}
+		"SouthEast"
+		{
+			"command"	"map c8m4_interior coop; "
+			"text"		"Hospital"
+		}
+		"South"
+		{
+			"command"	"map c8m5_rooftop coop; "
+			"text"		"Rooftop"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c9_coop_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu1a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D1 - Campaign - Crash Course
+	//--------------------------------------------------------------
+	"c9_coop_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[CRASH COURSE]"
+		}
+		"North"
+		{
+			"command"	"map c9m1_alleys coop; "
+			"text"		"The Alleys"
+		}
+		"NorthEast"
+		{
+			"command"	"map c9m2_lots coop; "
+			"text"		"The Truck Depot Finale"
+		}
+		"East"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c8_coop_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c10_coop_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu1a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D1 - Campaign - Death Toll
+	//--------------------------------------------------------------
+	"c10_coop_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[DEATH TOLL]"
+		}
+		"North"
+		{
+			"command"	"map c10m1_caves coop; "
+			"text"		"The Turnpike"
+		}
+		"NorthEast"
+		{
+			"command"	"map c10m2_drainage coop; "
+			"text"		"The Drains"
+		}
+		"East"
+		{
+			"command"	"map c10m3_ranchhouse coop; "
+			"text"		"The Church"
+		}
+		"SouthEast"
+		{
+			"command"	"map c10m4_mainstreet coop; "
+			"text"		"The Town"
+		}
+		"South"
+		{
+			"command"	"map c10m5_houseboat coop; "
+			"text"		"Boat House Finale"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c9_coop_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c11_coop_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu1a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D1 - Campaign - Dead Air
+	//--------------------------------------------------------------
+	"c11_coop_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[DEAD AIR]"
+		}
+		"North"
+		{
+			"command"	"map c11m1_greenhouse coop; "
+			"text"		"The Greenhouse"
+		}
+		"NorthEast"
+		{
+			"command"	"map c11m2_offices coop; "
+			"text"		"The Crane"
+		}
+		"East"
+		{
+			"command"	"map c11m3_garage coop; "
+			"text"		"The Construction Site"
+		}
+		"SouthEast"
+		{
+			"command"	"map c11m4_terminal coop; "
+			"text"		"The Terminal"
+		}
+		"South"
+		{
+			"command"	"map c11m5_runway coop; "
+			"text"		"Runway Finale"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c10_coop_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c12_coop_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu1a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D1 - Campaign - Blood Harvest
+	//--------------------------------------------------------------
+	"c12_coop_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[BLOOD HARVEST]"
+		}
+		"North"
+		{
+			"command"	"map c12m1_hilltop coop; "
+			"text"		"The Woods"
+		}
+		"NorthEast"
+		{
+			"command"	"map c12m2_traintunnel coop; "
+			"text"		"The Tunnel"
+		}
+		"East"
+		{
+			"command"	"map c12m3_bridge coop; "
+			"text"		"The Bridge"
+		}
+		"SouthEast"
+		{
+			"command"	"map c12m4_barn coop; "
+			"text"		"The Train Station"
+		}
+		"South"
+		{
+			"command"	"map c12m5_cornfield coop; "
+			"text"		"Farmhouse Finale"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c11_coop_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c7_coop_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu1a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D1 - Campaign - The Sacrifice
+	//--------------------------------------------------------------
+	"c7_coop_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[THE SACRIFICE]"
+		}
+		"North"
+		{
+			"command"	"map c7m1_docks coop; "
+			"text"		"Docks"
+		}
+		"NorthEast"
+		{
+			"command"	"map c7m2_barge coop; "
+			"text"		"Barge"
+		}
+		"East"
+		{
+			"command"	"map c7m3_port coop; "
+			"text"		"Port"
+		}
+		"SouthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c12_coop_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu1a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D2 - Campaign Maps
+	//--------------------------------------------------------------
+	"MapsMenu1b"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[MAPS]"
+		}
+		"North"
+		{
+			"command"	"+mouse_menu c1_coop_radial"
+			"text"		"Dead Center"
+		}
+		"NorthEast"
+		{
+			"command"	"+mouse_menu c6_coop_radial"
+			"text"		"The Passing"
+		}
+		"East"
+		{
+			"command"	"+mouse_menu c2_coop_radial"
+			"text"		"Dark Carnival"
+		}
+		"SouthEast"
+		{
+			"command"	"+mouse_menu c3_coop_radial"
+			"text"		"Swamp Fever"
+		}
+		"South"
+		{
+			"command"	"+mouse_menu c4_coop_radial"
+			"text"		"Hard Rain"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c5_coop_radial"
+			"text"		"The Parish"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c13_coop_radial"
+			"text"		"Cold Stream"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu1a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	// L4D2 - Campaign - Dead Center
+	//--------------------------------------------------------------
+	"c1_coop_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[DEAD CENTER]"
+		}
+		"North"
+		{
+			"command"	"map c1m1_hotel coop; "
+			"text"		"Hotel"
+		}
+		"NorthEast"
+		{
+			"command"	"map c1m2_streets coop; "
+			"text"		"Streets"
+		}
+		"East"
+		{
+			"command"	"map c1m3_mall coop; "
+			"text"		"Mall"
+		}
+		"SouthEast"
+		{
+			"command"	"map c1m4_atrium coop; "
+			"text"		"Atrium"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c6_coop_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu1b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D2 - Campaign - The Passing
+	//--------------------------------------------------------------
+	"c6_coop_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[THE PASSING]"
+		}
+		"North"
+		{
+			"command"	"map c6m1_riverbank coop; "
+			"text"		"Riverbank"
+		}
+		"NorthEast"
+		{
+			"command"	"map c6m2_bedlam coop; "
+			"text"		"Underground"
+		}
+		"East"
+		{
+			"command"	"map c6m3_port coop; "
+			"text"		"Port"
+		}
+		"SouthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c1_coop_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c2_coop_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu1b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D2 - Campaign - Dark Carnival
+	//--------------------------------------------------------------
+	"c2_coop_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[DARK CARNIVAL]"
+		}
+		"North"
+		{
+			"command"	"map c2m1_highway coop; "
+			"text"		"Highway"
+		}
+		"NorthEast"
+		{
+			"command"	"map c2m2_fairgrounds coop; "
+			"text"		"Fairgrounds"
+		}
+		"East"
+		{
+			"command"	"map c2m3_coaster coop; "
+			"text"		"Coaster"
+		}
+		"SouthEast"
+		{
+			"command"	"map c2m4_barns coop; "
+			"text"		"Barns"
+		}
+		"South"
+		{
+			"command"	"map c2m5_concert coop; "
+			"text"		"Concert"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c6_coop_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c3_coop_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu1b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D2 - Campaign - Swamp Fever
+	//--------------------------------------------------------------
+	"c3_coop_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[SWAMP FEVER]"
+		}
+		"North"
+		{
+			"command"	"map c3m1_plankcountry coop; "
+			"text"		"Plank Country"
+		}
+		"NorthEast"
+		{
+			"command"	"map c3m2_swamp coop; "
+			"text"		"Swamp"
+		}
+		"East"
+		{
+			"command"	"map c3m3_shantytown coop; "
+			"text"		"Shanty Town"
+		}
+		"SouthEast"
+		{
+			"command"	"map c3m4_plantation coop; "
+			"text"		"Plantation"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c2_coop_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c4_coop_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu1b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D2 - Campaign - Hard Rain
+	//--------------------------------------------------------------
+	"c4_coop_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[HARD RAIN]"
+		}
+		"North"
+		{
+			"command"	"map c4m1_milltown_a coop; "
+			"text"		"Milltown"
+		}
+		"NorthEast"
+		{
+			"command"	"map c4m2_sugarmill_a coop; "
+			"text"		"Sugar Mill"
+		}
+		"East"
+		{
+			"command"	"map c4m3_sugarmill_b coop; "
+			"text"		"Mill Escape"
+		}
+		"SouthEast"
+		{
+			"command"	"map c4m4_milltown_b coop; "
+			"text"		"Return to Town"
+		}
+		"South"
+		{
+			"command"	"map c4m5_milltown_escape coop; "
+			"text"		"Town Escape"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c3_coop_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c5_coop_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu1b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D2 - Campaign - The Parish
+	//--------------------------------------------------------------
+	"c5_coop_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[THE PARISH]"
+		}
+		"North"
+		{
+			"command"	"map c5m1_waterfront coop; "
+			"text"		"Waterfront"
+		}
+		"NorthEast"
+		{
+			"command"	"map c5m2_park coop; "
+			"text"		"Park"
+		}
+		"East"
+		{
+			"command"	"map c5m3_cemetery coop; "
+			"text"		"Cemetery"
+		}
+		"SouthEast"
+		{
+			"command"	"map c5m4_quarter coop; "
+			"text"		"Quarter"
+		}
+		"South"
+		{
+			"command"	"map c5m5_bridge coop; "
+			"text"		"Bridge"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c4_coop_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c13_coop_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu1b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D2 - Campaign - Cold Stream
+	//--------------------------------------------------------------
+	"c13_coop_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[COLD STREAM]"
+		}
+		"North"
+		{
+			"command"	"map c13m1_alpinecreek coop; "
+			"text"		"Alpine Creek"
+		}
+		"NorthEast"
+		{
+			"command"	"map c13m2_southpinestream coop; "
+			"text"		"South Pine Stream"
+		}
+		"East"
+		{
+			"command"	"map c13m3_memorialbridge coop; "
+			"text"		"Memorial Bridge"
+		}
+		"SouthEast"
+		{
+			"command"	"map c13m4_cutthroatcreek coop; "
+			"text"		"Cut-Throat Creek"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c5_coop_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu1b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D1 - Realism Maps
+	//--------------------------------------------------------------
+	"MapsMenu2a"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[MAPS]"
+		}
+		"North"
+		{
+			"command"	"+mouse_menu c8_realism_radial"
+			"text"		"No Mercy"
+		}
+		"NorthEast"
+		{
+			"command"	"+mouse_menu c9_realism_radial"
+			"text"		"Crash Course"
+		}
+		"East"
+		{
+			"command"	"+mouse_menu c10_realism_radial"
+			"text"		"Death Toll"
+		}
+		"SouthEast"
+		{
+			"command"	"+mouse_menu c11_realism_radial"
+			"text"		"Dead Air"
+		}
+		"South"
+		{
+			"command"	"+mouse_menu c12_realism_radial"
+			"text"		"Blood Harvest"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c7_realism_radial"
+			"text"		"The Sacrifice"
+		}
+		"West"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu2b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	// L4D1 - Realism - No Mercy
+	//--------------------------------------------------------------
+	"c8_realism_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[NO MERCY]"
+		}
+		"North"
+		{
+			"command"	"map c8m1_apartment realism; "
+			"text"		"Apartments"
+		}
+		"NorthEast"
+		{
+			"command"	"map c8m2_subway realism; "
+			"text"		"Subway"
+		}
+		"East"
+		{
+			"command"	"map c8m3_sewers realism; "
+			"text"		"Sewer"
+		}
+		"SouthEast"
+		{
+			"command"	"map c8m4_interior realism; "
+			"text"		"Hospital"
+		}
+		"South"
+		{
+			"command"	"map c8m5_rooftop realism; "
+			"text"		"Rooftop"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c9_realism_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu2a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D1 - Realism - Crash Course
+	//--------------------------------------------------------------
+	"c9_realism_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[CRASH COURSE]"
+		}
+		"North"
+		{
+			"command"	"map c9m1_alleys realism; "
+			"text"		"The Alleys"
+		}
+		"NorthEast"
+		{
+			"command"	"map c9m2_lots realism; "
+			"text"		"The Truck Depot Finale"
+		}
+		"East"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c8_realism_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c10_realism_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu2a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D1 - Realism - Death Toll
+	//--------------------------------------------------------------
+	"c10_realism_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[DEATH TOLL]"
+		}
+		"North"
+		{
+			"command"	"map c10m1_caves realism; "
+			"text"		"The Turnpike"
+		}
+		"NorthEast"
+		{
+			"command"	"map c10m2_drainage realism; "
+			"text"		"The Drains"
+		}
+		"East"
+		{
+			"command"	"map c10m3_ranchhouse realism; "
+			"text"		"The Church"
+		}
+		"SouthEast"
+		{
+			"command"	"map c10m4_mainstreet realism; "
+			"text"		"The Town"
+		}
+		"South"
+		{
+			"command"	"map c10m5_houseboat realism; "
+			"text"		"Boat House Finale"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c9_realism_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c11_realism_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu2a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D1 - Realism - Dead Air
+	//--------------------------------------------------------------
+	"c11_realism_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[DEAD AIR]"
+		}
+		"North"
+		{
+			"command"	"map c11m1_greenhouse realism; "
+			"text"		"The Greenhouse"
+		}
+		"NorthEast"
+		{
+			"command"	"map c11m2_offices realism; "
+			"text"		"The Crane"
+		}
+		"East"
+		{
+			"command"	"map c11m3_garage realism; "
+			"text"		"The Construction Site"
+		}
+		"SouthEast"
+		{
+			"command"	"map c11m4_terminal realism; "
+			"text"		"The Terminal"
+		}
+		"South"
+		{
+			"command"	"map c11m5_runway realism; "
+			"text"		"Runway Finale"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c10_realism_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c12_realism_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu2a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D1 - Realism - Blood Harvest
+	//--------------------------------------------------------------
+	"c12_realism_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[BLOOD HARVEST]"
+		}
+		"North"
+		{
+			"command"	"map c12m1_hilltop realism; "
+			"text"		"The Woods"
+		}
+		"NorthEast"
+		{
+			"command"	"map c12m2_traintunnel realism; "
+			"text"		"The Tunnel"
+		}
+		"East"
+		{
+			"command"	"map c12m3_bridge realism; "
+			"text"		"The Bridge"
+		}
+		"SouthEast"
+		{
+			"command"	"map c12m4_barn realism; "
+			"text"		"The Train Station"
+		}
+		"South"
+		{
+			"command"	"map c12m5_cornfield realism; "
+			"text"		"Farmhouse Finale"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c11_realism_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c7_realism_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu2a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D1 - Realism - The Sacrifice
+	//--------------------------------------------------------------
+	"c7_realism_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[THE SACRIFICE]"
+		}
+		"North"
+		{
+			"command"	"map c7m1_docks realism; "
+			"text"		"Docks"
+		}
+		"NorthEast"
+		{
+			"command"	"map c7m2_barge realism; "
+			"text"		"Barge"
+		}
+		"East"
+		{
+			"command"	"map c7m3_port realism; "
+			"text"		"Port"
+		}
+		"SouthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c12_realism_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu2a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D2 - Realism Maps
+	//--------------------------------------------------------------
+	"MapsMenu2b"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[MAPS]"
+		}
+		"North"
+		{
+			"command"	"+mouse_menu c1_realism_radial"
+			"text"		"Dead Center"
+		}
+		"NorthEast"
+		{
+			"command"	"+mouse_menu c6_realism_radial"
+			"text"		"The Passing"
+		}
+		"East"
+		{
+			"command"	"+mouse_menu c2_realism_radial"
+			"text"		"Dark Carnival"
+		}
+		"SouthEast"
+		{
+			"command"	"+mouse_menu c3_realism_radial"
+			"text"		"Swamp Fever"
+		}
+		"South"
+		{
+			"command"	"+mouse_menu c4_realism_radial"
+			"text"		"Hard Rain"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c5_realism_radial"
+			"text"		"The Parish"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c13_realism_radial"
+			"text"		"Cold Stream"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu2a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	// L4D2 - Realism - Dead Center
+	//--------------------------------------------------------------
+	"c1_realism_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[DEAD CENTER]"
+		}
+		"North"
+		{
+			"command"	"map c1m1_hotel realism; "
+			"text"		"Hotel"
+		}
+		"NorthEast"
+		{
+			"command"	"map c1m2_streets realism; "
+			"text"		"Streets"
+		}
+		"East"
+		{
+			"command"	"map c1m3_mall realism; "
+			"text"		"Mall"
+		}
+		"SouthEast"
+		{
+			"command"	"map c1m4_atrium realism; "
+			"text"		"Atrium"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c6_realism_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu2b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D2 - Realism - The Passing
+	//--------------------------------------------------------------
+	"c6_realism_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[THE PASSING]"
+		}
+		"North"
+		{
+			"command"	"map c6m1_riverbank realism; "
+			"text"		"Riverbank"
+		}
+		"NorthEast"
+		{
+			"command"	"map c6m2_bedlam realism; "
+			"text"		"Underground"
+		}
+		"East"
+		{
+			"command"	"map c6m3_port realism; "
+			"text"		"Port"
+		}
+		"SouthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c1_realism_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c2_realism_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu2b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D2 - Realism - Dark Carnival
+	//--------------------------------------------------------------
+	"c2_realism_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[DARK CARNIVAL]"
+		}
+		"North"
+		{
+			"command"	"map c2m1_highway realism; "
+			"text"		"Highway"
+		}
+		"NorthEast"
+		{
+			"command"	"map c2m2_fairgrounds realism; "
+			"text"		"Fairgrounds"
+		}
+		"East"
+		{
+			"command"	"map c2m3_coaster realism; "
+			"text"		"Coaster"
+		}
+		"SouthEast"
+		{
+			"command"	"map c2m4_barns realism; "
+			"text"		"Barns"
+		}
+		"South"
+		{
+			"command"	"map c2m5_concert realism; "
+			"text"		"Concert"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c6_realism_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c3_realism_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu2b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D2 - Realism - Swamp Fever
+	//--------------------------------------------------------------
+	"c3_realism_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[SWAMP FEVER]"
+		}
+		"North"
+		{
+			"command"	"map c3m1_plankcountry realism; "
+			"text"		"Plank Country"
+		}
+		"NorthEast"
+		{
+			"command"	"map c3m2_swamp realism; "
+			"text"		"Swamp"
+		}
+		"East"
+		{
+			"command"	"map c3m3_shantytown realism; "
+			"text"		"Shanty Town"
+		}
+		"SouthEast"
+		{
+			"command"	"map c3m4_plantation realism; "
+			"text"		"Plantation"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c2_realism_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c4_realism_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu2b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D2 - Realism - Hard Rain
+	//--------------------------------------------------------------
+	"c4_realism_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[HARD RAIN]"
+		}
+		"North"
+		{
+			"command"	"map c4m1_milltown_a realism; "
+			"text"		"Milltown"
+		}
+		"NorthEast"
+		{
+			"command"	"map c4m2_sugarmill_a realism; "
+			"text"		"Sugar Mill"
+		}
+		"East"
+		{
+			"command"	"map c4m3_sugarmill_b realism; "
+			"text"		"Mill Escape"
+		}
+		"SouthEast"
+		{
+			"command"	"map c4m4_milltown_b realism; "
+			"text"		"Return to Town"
+		}
+		"South"
+		{
+			"command"	"map c4m5_milltown_escape realism; "
+			"text"		"Town Escape"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c3_realism_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c5_realism_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu2b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D2 - Realism - The Parish
+	//--------------------------------------------------------------
+	"c5_realism_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[THE PARISH]"
+		}
+		"North"
+		{
+			"command"	"map c5m1_waterfront realism; "
+			"text"		"Waterfront"
+		}
+		"NorthEast"
+		{
+			"command"	"map c5m2_park realism; "
+			"text"		"Park"
+		}
+		"East"
+		{
+			"command"	"map c5m3_cemetery realism; "
+			"text"		"Cemetery"
+		}
+		"SouthEast"
+		{
+			"command"	"map c5m4_quarter realism; "
+			"text"		"Quarter"
+		}
+		"South"
+		{
+			"command"	"map c5m5_bridge realism; "
+			"text"		"Bridge"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c4_realism_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c13_realism_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu2b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D2 - Realism - Cold Stream
+	//--------------------------------------------------------------
+	"c13_realism_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[COLD STREAM]"
+		}
+		"North"
+		{
+			"command"	"map c13m1_alpinecreek realism; "
+			"text"		"Alpine Creek"
+		}
+		"NorthEast"
+		{
+			"command"	"map c13m2_southpinestream realism; "
+			"text"		"South Pine Stream"
+		}
+		"East"
+		{
+			"command"	"map c13m3_memorialbridge realism; "
+			"text"		"Memorial Bridge"
+		}
+		"SouthEast"
+		{
+			"command"	"map c13m4_cutthroatcreek realism; "
+			"text"		"Cut-Throat Creek"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c5_realism_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu2b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D1 - Versus Maps
+	//--------------------------------------------------------------
+	"MapsMenu3a"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[MAPS]"
+		}
+		"North"
+		{
+			"command"	"+mouse_menu c8_versus_radial"
+			"text"		"No Mercy"
+		}
+		"NorthEast"
+		{
+			"command"	"+mouse_menu c9_versus_radial"
+			"text"		"Crash Course"
+		}
+		"East"
+		{
+			"command"	"+mouse_menu c10_versus_radial"
+			"text"		"Death Toll"
+		}
+		"SouthEast"
+		{
+			"command"	"+mouse_menu c11_versus_radial"
+			"text"		"Dead Air"
+		}
+		"South"
+		{
+			"command"	"+mouse_menu c12_versus_radial"
+			"text"		"Blood Harvest"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c7_versus_radial"
+			"text"		"The Sacrifice"
+		}
+		"West"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu3b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	// L4D1 - Versus - No Mercy
+	//--------------------------------------------------------------
+	"c8_versus_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[NO MERCY]"
+		}
+		"North"
+		{
+			"command"	"map c8m1_apartment versus; "
+			"text"		"Apartments"
+		}
+		"NorthEast"
+		{
+			"command"	"map c8m2_subway versus; "
+			"text"		"Subway"
+		}
+		"East"
+		{
+			"command"	"map c8m3_sewers versus; "
+			"text"		"Sewer"
+		}
+		"SouthEast"
+		{
+			"command"	"map c8m4_interior versus; "
+			"text"		"Hospital"
+		}
+		"South"
+		{
+			"command"	"map c8m5_rooftop versus; "
+			"text"		"Rooftop"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c9_versus_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu3a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D1 - Versus - Crash Course
+	//--------------------------------------------------------------
+	"c9_versus_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[CRASH COURSE]"
+		}
+		"North"
+		{
+			"command"	"map c9m1_alleys versus; "
+			"text"		"The Alleys"
+		}
+		"NorthEast"
+		{
+			"command"	"map c9m2_lots versus; "
+			"text"		"The Truck Depot Finale"
+		}
+		"East"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c8_versus_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c10_versus_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu3a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D1 - Versus - Death Toll
+	//--------------------------------------------------------------
+	"c10_versus_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[DEATH TOLL]"
+		}
+		"North"
+		{
+			"command"	"map c10m1_caves versus; "
+			"text"		"The Turnpike"
+		}
+		"NorthEast"
+		{
+			"command"	"map c10m2_drainage versus; "
+			"text"		"The Drains"
+		}
+		"East"
+		{
+			"command"	"map c10m3_ranchhouse versus; "
+			"text"		"The Church"
+		}
+		"SouthEast"
+		{
+			"command"	"map c10m4_mainstreet versus; "
+			"text"		"The Town"
+		}
+		"South"
+		{
+			"command"	"map c10m5_houseboat versus; "
+			"text"		"Boat House Finale"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c9_versus_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c11_versus_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu3a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D1 - Versus - Dead Air
+	//--------------------------------------------------------------
+	"c11_versus_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[DEAD AIR]"
+		}
+		"North"
+		{
+			"command"	"map c11m1_greenhouse versus; "
+			"text"		"The Greenhouse"
+		}
+		"NorthEast"
+		{
+			"command"	"map c11m2_offices versus; "
+			"text"		"The Crane"
+		}
+		"East"
+		{
+			"command"	"map c11m3_garage versus; "
+			"text"		"The Construction Site"
+		}
+		"SouthEast"
+		{
+			"command"	"map c11m4_terminal versus; "
+			"text"		"The Terminal"
+		}
+		"South"
+		{
+			"command"	"map c11m5_runway versus; "
+			"text"		"Runway Finale"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c10_versus_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c12_versus_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu3a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D1 - Versus - Blood Harvest
+	//--------------------------------------------------------------
+	"c12_versus_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[BLOOD HARVEST]"
+		}
+		"North"
+		{
+			"command"	"map c12m1_hilltop versus; "
+			"text"		"The Woods"
+		}
+		"NorthEast"
+		{
+			"command"	"map c12m2_traintunnel versus; "
+			"text"		"The Tunnel"
+		}
+		"East"
+		{
+			"command"	"map c12m3_bridge versus; "
+			"text"		"The Bridge"
+		}
+		"SouthEast"
+		{
+			"command"	"map c12m4_barn versus; "
+			"text"		"The Train Station"
+		}
+		"South"
+		{
+			"command"	"map c12m5_cornfield versus; "
+			"text"		"Farmhouse Finale"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c11_versus_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c7_versus_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu3a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D1 - Versus - The Sacrifice
+	//--------------------------------------------------------------
+	"c7_versus_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[THE SACRIFICE]"
+		}
+		"North"
+		{
+			"command"	"map c7m1_docks versus; "
+			"text"		"Docks"
+		}
+		"NorthEast"
+		{
+			"command"	"map c7m2_barge versus; "
+			"text"		"Barge"
+		}
+		"East"
+		{
+			"command"	"map c7m3_port versus; "
+			"text"		"Port"
+		}
+		"SouthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c12_versus_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu3a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D2 - Versus Maps
+	//--------------------------------------------------------------
+	"MapsMenu3b"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[MAPS]"
+		}
+		"North"
+		{
+			"command"	"+mouse_menu c1_versus_radial"
+			"text"		"Dead Center"
+		}
+		"NorthEast"
+		{
+			"command"	"+mouse_menu c6_versus_radial"
+			"text"		"The Passing"
+		}
+		"East"
+		{
+			"command"	"+mouse_menu c2_versus_radial"
+			"text"		"Dark Carnival"
+		}
+		"SouthEast"
+		{
+			"command"	"+mouse_menu c3_versus_radial"
+			"text"		"Swamp Fever"
+		}
+		"South"
+		{
+			"command"	"+mouse_menu c4_versus_radial"
+			"text"		"Hard Rain"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c5_versus_radial"
+			"text"		"The Parish"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c13_versus_radial"
+			"text"		"Cold Stream"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu3a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	// L4D2 - Versus - Dead Center
+	//--------------------------------------------------------------
+	"c1_versus_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[DEAD CENTER]"
+		}
+		"North"
+		{
+			"command"	"map c1m1_hotel versus; "
+			"text"		"Hotel"
+		}
+		"NorthEast"
+		{
+			"command"	"map c1m2_streets versus; "
+			"text"		"Streets"
+		}
+		"East"
+		{
+			"command"	"map c1m3_mall versus; "
+			"text"		"Mall"
+		}
+		"SouthEast"
+		{
+			"command"	"map c1m4_atrium versus; "
+			"text"		"Atrium"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c6_versus_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu3b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D2 - Versus - The Passing
+	//--------------------------------------------------------------
+	"c6_versus_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[THE PASSING]"
+		}
+		"North"
+		{
+			"command"	"map c6m1_riverbank versus; "
+			"text"		"Riverbank"
+		}
+		"NorthEast"
+		{
+			"command"	"map c6m2_bedlam versus; "
+			"text"		"Underground"
+		}
+		"East"
+		{
+			"command"	"map c6m3_port versus; "
+			"text"		"Port"
+		}
+		"SouthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c1_versus_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c2_versus_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu3b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D2 - Versus - Dark Carnival
+	//--------------------------------------------------------------
+	"c2_versus_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[DARK CARNIVAL]"
+		}
+		"North"
+		{
+			"command"	"map c2m1_highway versus; "
+			"text"		"Highway"
+		}
+		"NorthEast"
+		{
+			"command"	"map c2m2_fairgrounds versus; "
+			"text"		"Fairgrounds"
+		}
+		"East"
+		{
+			"command"	"map c2m3_coaster versus; "
+			"text"		"Coaster"
+		}
+		"SouthEast"
+		{
+			"command"	"map c2m4_barns versus; "
+			"text"		"Barns"
+		}
+		"South"
+		{
+			"command"	"map c2m5_concert versus; "
+			"text"		"Concert"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c6_versus_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c3_versus_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu3b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D2 - Versus - Swamp Fever
+	//--------------------------------------------------------------
+	"c3_versus_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[SWAMP FEVER]"
+		}
+		"North"
+		{
+			"command"	"map c3m1_plankcountry versus; "
+			"text"		"Plank Country"
+		}
+		"NorthEast"
+		{
+			"command"	"map c3m2_swamp versus; "
+			"text"		"Swamp"
+		}
+		"East"
+		{
+			"command"	"map c3m3_shantytown versus; "
+			"text"		"Shanty Town"
+		}
+		"SouthEast"
+		{
+			"command"	"map c3m4_plantation versus; "
+			"text"		"Plantation"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c2_versus_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c4_versus_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu3b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D2 - Versus - Hard Rain
+	//--------------------------------------------------------------
+	"c4_versus_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[HARD RAIN]"
+		}
+		"North"
+		{
+			"command"	"map c4m1_milltown_a versus; "
+			"text"		"Milltown"
+		}
+		"NorthEast"
+		{
+			"command"	"map c4m2_sugarmill_a versus; "
+			"text"		"Sugar Mill"
+		}
+		"East"
+		{
+			"command"	"map c4m3_sugarmill_b versus; "
+			"text"		"Mill Escape"
+		}
+		"SouthEast"
+		{
+			"command"	"map c4m4_milltown_b versus; "
+			"text"		"Return to Town"
+		}
+		"South"
+		{
+			"command"	"map c4m5_milltown_escape versus; "
+			"text"		"Town Escape"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c3_versus_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c5_versus_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu3b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D2 - Versus - The Parish
+	//--------------------------------------------------------------
+	"c5_versus_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[THE PARISH]"
+		}
+		"North"
+		{
+			"command"	"map c5m1_waterfront versus; "
+			"text"		"Waterfront"
+		}
+		"NorthEast"
+		{
+			"command"	"map c5m2_park versus; "
+			"text"		"Park"
+		}
+		"East"
+		{
+			"command"	"map c5m3_cemetery versus; "
+			"text"		"Cemetery"
+		}
+		"SouthEast"
+		{
+			"command"	"map c5m4_quarter versus; "
+			"text"		"Quarter"
+		}
+		"South"
+		{
+			"command"	"map c5m5_bridge versus; "
+			"text"		"Bridge"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu c4_versus_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c13_versus_radial"
+			"text"		"[NEXT CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu3b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D2 - Versus - Cold Stream
+	//--------------------------------------------------------------
+	"c13_versus_radial"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[COLD STREAM]"
+		}
+		"North"
+		{
+			"command"	"map c13m1_alpinecreek versus; "
+			"text"		"Alpine Creek"
+		}
+		"NorthEast"
+		{
+			"command"	"map c13m2_southpinestream versus; "
+			"text"		"South Pine Stream"
+		}
+		"East"
+		{
+			"command"	"map c13m3_memorialbridge versus; "
+			"text"		"Memorial Bridge"
+		}
+		"SouthEast"
+		{
+			"command"	"map c13m4_cutthroatcreek versus; "
+			"text"		"Cut-Throat Creek"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu c5_versus_radial"
+			"text"		"[PREV CHAPTER]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu3b"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------	
+
+	//--------------------------------------------------------------
+	// L4D1 - Scavenge Maps
+	//--------------------------------------------------------------
+	"MapsMenu4a"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[MAPS]"
+		}
+		"North"
+		{
+			"command"	"map c8m1_apartment scavenge; "
+			"text"		"Apartments"
+		}
+		"NorthEast"
+		{
+			"command"	"map c8m5_rooftop scavenge; "
+			"text"		"Rooftop"
+		}
+		"East"
+		{
+			"command"	"map c10m3_ranchhouse scavenge; "
+			"text"		"The Church"
+		}
+		"SouthEast"
+		{
+			"command"	"map c11m4_terminal scavenge; "
+			"text"		"The Terminal"
+		}
+		"South"
+		{
+			"command"	"map c12m5_cornfield scavenge; "
+			"text"		"The Farmhouse"
+		}
+		"SouthWest"
+		{
+			"command"	"map c7m1_docks scavenge; "
+			"text"		"Brick Factory"
+		}
+		"West"
+		{
+			"command"	"map c7m2_barge scavenge; "
+			"text"		"Barge"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu4b1"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	// L4D2 - Scavenge Maps (Page 1/2)
+	//--------------------------------------------------------------
+	"MapsMenu4b1"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[MAPS]"
+		}
+		"North"
+		{
+			"command"	"map c1m4_atrium scavenge; "
+			"text"		"Mall Atrium"
+		}
+		"NorthEast"
+		{
+			"command"	"map c6m1_riverbank scavenge; "
+			"text"		"Riverbank"
+		}
+		"East"
+		{
+			"command"	"map c6m2_bedlam scavenge; "
+			"text"		"Underground"
+		}
+		"SouthEast"
+		{
+			"command"	"map c6m3_port scavenge; "
+			"text"		"Port"
+		}
+		"South"
+		{
+			"command"	"map c2m1_highway scavenge; "
+			"text"		"Motel"
+		}
+		"SouthWest"
+		{
+			"command"	"map c3m1_plankcountry scavenge; "
+			"text"		"Plank Country"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu MapsMenu4b2"
+			"text"		"[MORE MAPS]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu4a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	// L4D2 - Scavenge Maps (Page 2/2)
+	//--------------------------------------------------------------
+	"MapsMenu4b2"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[MAPS]"
+		}
+		"North"
+		{
+			"command"	"map c4m1_milltown_a scavenge; "
+			"text"		"Milltown"
+		}
+		"NorthEast"
+		{
+			"command"	"map c4m2_sugarmill_a scavenge; "
+			"text"		"Sugar Mill"
+		}
+		"East"
+		{
+			"command"	"map c5m2_park scavenge; "
+			"text"		"Park"
+		}
+		"SouthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu MapsMenu4b1"
+			"text"		"[PREV MAPS]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu4a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	// L4D1 - Survival Maps
+	//--------------------------------------------------------------
+	"MapsMenu5a"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[MAPS]"
+		}
+		"North"
+		{
+			"command"	"map c8m2_subway survival; "
+			"text"		"Generator Room"
+		}
+		"NorthEast"
+		{
+			"command"	"map c8m5_rooftop survival; "
+			"text"		"Rooftop"
+		}
+		"East"
+		{
+			"command"	"map c7m1_docks survival; "
+			"text"		"Train Car"
+		}
+		"SouthEast"
+		{
+			"command"	"map c7m3_port survival; "
+			"text"		"Port (The Sacrifice)"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu5b1"
+			"text"		"[L4D2 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	// L4D2 - Survival Maps (Page 1/3)
+	//--------------------------------------------------------------
+	"MapsMenu5b1"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[MAPS]"
+		}
+		"North"
+		{
+			"command"	"map c1m4_atrium survival; "
+			"text"		"Mall Atrium"
+		}
+		"NorthEast"
+		{
+			"command"	"map c6m1_riverbank survival; "
+			"text"		"Riverbank"
+		}
+		"East"
+		{
+			"command"	"map c6m2_bedlam survival; "
+			"text"		"Underground"
+		}
+		"SouthEast"
+		{
+			"command"	"map c6m3_port survival; "
+			"text"		"Port (The Passing)"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu MapsMenu5b2"
+			"text"		"[MORE MAPS]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu5a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	// L4D2 - Survival Maps (Page 2/3)
+	//--------------------------------------------------------------
+	"MapsMenu5b2"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[MAPS]"
+		}
+		"North"
+		{
+			"command"	"map c2m1_highway survival; "
+			"text"		"Motel"
+		}
+		"NorthEast"
+		{
+			"command"	"map c2m4_barns survival; "
+			"text"		"Stadium Gate"
+		}
+		"East"
+		{
+			"command"	"map c2m5_concert survival; "
+			"text"		"Concert"
+		}
+		"SouthEast"
+		{
+			"command"	"map c3m3_shantytown survival; "
+			"text"		"Gator Village"
+		}
+		"South"
+		{
+			"command"	"map c3m4_plantation survival; "
+			"text"		"Plantation"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu MapsMenu5b1"
+			"text"		"[PREV MAPS]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu MapsMenu5b3"
+			"text"		"[MORE MAPS]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu5a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	// L4D2 - Survival Maps (Page 3/3)
+	//--------------------------------------------------------------
+	"MapsMenu5b3"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[MAPS]"
+		}
+		"North"
+		{
+			"command"	"map c4m1_milltown_a survival; "
+			"text"		"Burger Tank"
+		}
+		"NorthEast"
+		{
+			"command"	"map c4m2_sugarmill_a survival; "
+			"text"		"Sugar Mill"
+		}
+		"East"
+		{
+			"command"	"map c5m1_waterfront survival; "
+			"text"		"Bus Depot"
+		}
+		"SouthEast"
+		{
+			"command"	"map c5m5_bridge survival; "
+			"text"		"Bridge"
+		}
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu MapsMenu5b2"
+			"text"		"[PREV MAPS]"
+		}
+		"NorthWest"
+		{
+			"command"	"+mouse_menu MapsMenu5a"
+			"text"		"[L4D1 MAPS]"
+		}
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	//# Difficulty Selector
+	//--------------------------------------------------------------
+	"Difficulty"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[Difficulty]"
+		}
+		"North"
+		{
+			"command"	"z_difficulty easy; "
+			"text"		"Easy"
+		}
+		"NorthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"East"
+		{
+			"command"	"z_difficulty hard; "
+			"text"		"Advanced"
+		}
+		"SouthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"South"
+		{
+			"command"	"z_difficulty impossible; "
+			"text"		"Expert"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	"z_difficulty normal; "
+			"text"		"Normal"
+		}
+		"NorthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	//# Character Selector
+	//--------------------------------------------------------------
+	"Survivors,Survivor"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[Control]"
+		}
+		"North"
+		{
+			"command"	"alias mousemenu1 +mouse_menu Gambler1; alias mousemenu2 +mouse_menu Gambler2; alias mousemenu3 +mouse_menu Gambler3; alias mousemenu4 +mouse_menu Gambler4; sb_takecontrol Nick; vocalize C3M1FerryEnd2; -mouse_menu"
+			"text"		"Nick"
+		}
+		"NorthEast"
+		{
+			"command"	"alias mousemenu1 +mouse_menu NamVet1; alias mousemenu2 +mouse_menu NamVet2; alias mousemenu3 +mouse_menu NamVet3; alias mousemenu4 +mouse_menu NamVet4; sb_takecontrol Bill; vocalize IntroFarm4; -mouse_menu"
+			"text"		"Bill"
+		}
+		"East"
+		{
+			"command"	"alias mousemenu1 +mouse_menu Mechanic1; alias mousemenu2 +mouse_menu Mechanic2; alias mousemenu3 +mouse_menu Mechanic3; alias mousemenu4 +mouse_menu Mechanic4; sb_takecontrol Ellis; vocalize C3M1FerryEnd2; -mouse_menu"
+			"text"		"Ellis"
+		}
+		"SouthEast"
+		{
+			"command"	"alias mousemenu1 +mouse_menu Manager1; alias mousemenu2 +mouse_menu Manager2; alias mousemenu3 +mouse_menu Manager3; alias mousemenu4 +mouse_menu Manager4; sb_takecontrol Louis; vocalize hospital05_path01b; -mouse_menu"
+			"text"		"Louis"
+		}
+		"South"
+		{
+			"command"	"alias mousemenu1 +mouse_menu Producer1; alias mousemenu2 +mouse_menu Producer2; alias mousemenu3 +mouse_menu Producer3; alias mousemenu4 +mouse_menu Producer4; sb_takecontrol Rochelle; vocalize C5M5_GateDown; -mouse_menu"
+			"text"		"Rochelle"
+		}
+		"SouthWest"
+		{
+			"command"	"alias mousemenu1 +mouse_menu Biker1; alias mousemenu2 +mouse_menu Biker2; alias mousemenu3 +mouse_menu Biker3; alias mousemenu4 +mouse_menu Biker4; sb_takecontrol Francis; vocalize ConceptBlock697; -mouse_menu"
+			"text"		"Francis"
+		}
+		"West"
+		{
+			"command"	"alias mousemenu1 +mouse_menu Coach1; alias mousemenu2 +mouse_menu Coach2; alias mousemenu3 +mouse_menu Coach3; alias mousemenu4 +mouse_menu Coach4; sb_takecontrol Coach; vocalize C3M1FerryEnd2; -mouse_menu"
+			"text"		"Coach"
+		}
+		"NorthWest"
+		{
+			"command"	"alias mousemenu1 +mouse_menu TeenAngst1; alias mousemenu2 +mouse_menu TeenAngst2; alias mousemenu3 +mouse_menu TeenAngst3; alias mousemenu4 +mouse_menu TeenAngst4; sb_takecontrol Zoey; vocalize IntroFarm4; -mouse_menu"
+			"text"		"Zoey"
+		}
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	//# Spotting Infected
+	//--------------------------------------------------------------
+	"Zombies,Survivor,Alive"
+	{
+		"Center"
+		{
+			"command"	"vocalize PlayerIncoming"
+			"text"		"Horde"
+		}
+		"North"
+		{
+			"command"	"vocalize PlayerAlsoWarnSmoker"
+			"text"		"Smoker"
+		}
+		"NorthEast"
+		{
+			"command"	"vocalize PlayerAlsoWarnWitch"
+			"text"		"Witch"
+		}
+		"East"
+		{
+			"command"	"vocalize PlayerAlsoWarnBoomer"
+			"text"		"Boomer"
+		}
+		"SouthEast"
+		{
+			"command"	"vocalize PlayerAlsoWarnSpitter"
+			"text"		"Spitter"
+		}
+		"South"
+		{
+			"command"	"vocalize PlayerAlsoWarnCharger"
+			"text"		"Charger"
+		}
+		"SouthWest"
+		{
+			"command"	"vocalize PlayerAlsoWarnJockey"
+			"text"		"Jockey"
+		}
+		"West"
+		{
+			"command"	"vocalize PlayerAlsoWarnHunter"
+			"text"		"Hunter"
+		}
+		"NorthWest"
+		{
+			"command"	"vocalize PlayerAlsoWarnTank"
+			"text"		"Tank"
+		}
+	}
+	//--------------------------------------------------------------
+	"Zombies,Infected"
+	{
+		"Center"
+		{
+			"command"	"director_force_panic_event; "
+			"text"		"Spawn Horde"
+		}
+		"North"
+		{
+			"command"	"z_spawn smoker; "
+			"text"		"Spawn Smoker"
+		}
+		"NorthEast"
+		{
+			"command"	"z_spawn witch; "
+			"text"		"Spawn Witch"
+		}
+		"East"
+		{
+			"command"	"z_spawn boomer; "
+			"text"		"Spawn Boomer"
+		}
+		"SouthEast"
+		{
+			"command"	"z_spawn spitter; "
+			"text"		"Spawn Spitter"
+		}
+		"South"
+		{
+			"command"	"z_spawn charger; "
+			"text"		"Spawn Charger"
+		}
+		"SouthWest"
+		{
+			"command"	"z_spawn jockey; "
+			"text"		"Spawn Jockey"
+		}
+		"West"
+		{
+			"command"	"z_spawn hunter; "
+			"text"		"Spawn Hunter"
+		}
+		"NorthWest"
+		{
+			"command"	"z_spawn tank; "
+			"text"		"Spawn Tank"
+		}
+	}
+	//--------------------------------------------------------------
+	"Zombies,Spectator"
+	{
+		"Center"
+		{
+			"command"	"director_force_panic_event; "
+			"text"		"Spawn Horde"
+		}
+		"North"
+		{
+			"command"	"z_spawn smoker; "
+			"text"		"Spawn Smoker"
+		}
+		"NorthEast"
+		{
+			"command"	"z_spawn witch; "
+			"text"		"Spawn Witch"
+		}
+		"East"
+		{
+			"command"	"z_spawn boomer; "
+			"text"		"Spawn Boomer"
+		}
+		"SouthEast"
+		{
+			"command"	"z_spawn spitter; "
+			"text"		"Spawn Spitter"
+		}
+		"South"
+		{
+			"command"	"z_spawn charger; "
+			"text"		"Spawn Charger"
+		}
+		"SouthWest"
+		{
+			"command"	"z_spawn jockey; "
+			"text"		"Spawn Jockey"
+		}
+		"West"
+		{
+			"command"	"z_spawn hunter; "
+			"text"		"Spawn Hunter"
+		}
+		"NorthWest"
+		{
+			"command"	"z_spawn tank; "
+			"text"		"Spawn Tank"
+		}
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	//# Bot Menu
+	//--------------------------------------------------------------
+	"BotMenu1"
+	{
+		"Center"
+		{
+			"command"	"sb_move_to_cursor; vocalize PlayerThisWay"
+			"text"		"Move here!"
+		}
+		"North"
+		{
+			"command"	"warp_all_survivors_here; vocalize PlayerStayTogether"
+			"text"		"Warp Survivors"
+		}
+		"NorthEast"
+		{
+			"command"	"sb_flashlight 0; vocalize PlayerLook"
+			"text"		"Lights on!"
+		}
+		"East"
+		{
+			"command"	"bots_move; vocalize PlayerMoveOn"
+			"text"		"Let's move!"
+		}
+		"SouthEast"
+		{
+			"command"	"bots_fire; vocalize PlayerCoverMe"
+			"text"		"Open fire!"
+		}
+		"South"
+		{
+			"command"	"+mouse_menu BotMenu2"
+			"text"		"[MAX MELEE]"
+		}
+		"SouthWest"
+		{
+			"command"	"bots_holdfire; vocalize PlayerWarnCareful"
+			"text"		"Hold fire!"
+		}
+		"West"
+		{
+			"command"	"bots_stop; vocalize PlayerWaitHere"
+			"text"		"Wait here!"
+		}
+		"NorthWest"
+		{
+			"command"	"sb_flashlight -1; vocalize PlayerKillThatLight"
+			"text"		"Lights off!"
+		}
+	}
+	//--------------------------------------------------------------
+	"BotMenu2"
+	{
+		"Center"
+		{
+			"command"	""
+			"text"		"[MAX MELEES]"
+		}
+		"North"
+		{
+			"command"	"sb_max_team_melee_weapons 4; "
+			"text"		"All"
+		}
+		"NorthEast"
+		{
+			"command"	"sb_max_team_melee_weapons 3; "
+			"text"		"3"
+		}
+		"East"
+		{
+			"command"	"sb_max_team_melee_weapons 2; "
+			"text"		"2"
+		}
+		"SouthEast"
+		{
+			"command"	"sb_max_team_melee_weapons 1; "
+			"text"		"1"
+		}
+		"South"
+		{
+			"command"	"sb_max_team_melee_weapons 0; "
+			"text"		"None"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu BotMenu1"
+			"text"		"Bot commands"
+		}
+		"NorthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	//# Weapon Menu
+	//--------------------------------------------------------------
+	"WeaponMenu"
+	{
+		"Center"
+		{
+			"command"	"give ammo; "
+			"text"		"Ammo"
+		}
+		"North"
+		{
+			"command"	"+mouse_menu MeleeWeapons"
+			"text"		"[Melee Weapons]"
+		}
+		"NorthEast"
+		{
+			"command"	"+mouse_menu AutoShotguns"
+			"text"		"[Auto Shotguns]"
+		}	
+		"East"
+		{
+			"command"	"+mouse_menu AssaultRifles"
+			"text"		"[Assualt Rifles]"
+		}	
+		"SouthEast"
+		{
+			"command"	"+mouse_menu CombatSnipers"
+			"text"		"[Combat Snipers]"
+		}	
+		"South"
+		{
+			"command"	"+mouse_menu SpecialWeapons"
+			"text"		"[Other Weapons]"
+		}
+		"SouthWest"
+		{
+			"command"	"+mouse_menu HuntingRifles"
+			"text"		"[Hunting Rifles]"
+		}
+		"West"
+		{
+			"command"	"+mouse_menu SubmachineGuns"
+			"text"		"[Submachine Guns]"
+		}	
+		"NorthWest"
+		{
+			"command"	"+mouse_menu PumpShotguns"
+			"text"		"[Pump Shotguns]"
+		}	
+	}
+	//--------------------------------------------------------------
+	"MeleeWeapons"
+	{
+		"Center"
+		{
+			"command"	"give katana; "
+			"text"		"Katana"
+		}
+		"North"
+		{
+			"command"	"give crowbar; "
+			"text"		"Crowbar"
+		}
+		"NorthEast"
+		{
+			"command"	"give golfclub; "
+			"text"		"Golf Club"
+		}
+		"East"
+		{
+			"command"	"give cricket_bat; "
+			"text"		"Cricket Bat"
+		}
+		"SouthEast"
+		{
+			"command"	"give baseball_bat; "
+			"text"		"BaseBall Bat"
+		}	
+		"South"
+		{
+			"command"	"give fireaxe; "
+			"text"		"Fire Axe"
+		}
+		"SouthWest"
+		{
+			"command"	"give machete; "
+			"text"		"Machete"
+		}
+		"West"
+		{
+			"command"	"give tonfa; "
+			"text"		"Tonfa"
+		}	
+		"NorthWest"
+		{
+			"command"	"give frying_pan; "
+			"text"		"Frying Pan"
+		}	
+	}
+	//--------------------------------------------------------------
+	"AutoShotguns"
+	{
+		"Center"
+		{
+			"command"	"+mouse_menu WeaponMenu"
+			"text"		"[RETURN]"
+		}
+		"North"
+		{
+			"command"	"give autoshotgun; "
+			"text"		"Tactical Shotgun"
+		}
+		"NorthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"East"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}	
+		"South"
+		{
+			"command"	"give shotgun_spas; "
+			"text"		"Combat Shotgun"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	""
+			"text"		"-"
+		}	
+		"NorthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}	
+	}
+	//--------------------------------------------------------------
+	"AssaultRifles"
+	{
+		"Center"
+		{
+			"command"	"+mouse_menu WeaponMenu"
+			"text"		"[RETURN]"
+		}
+		"North"
+		{
+			"command"	"give rifle; "
+			"text"		"M16"
+		}
+		"NorthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"East"
+		{
+			"command"	"give rifle_desert; "
+			"text"		"SCAR"
+		}
+		"SouthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}	
+		"South"
+		{
+			"command"	"give rifle_ak47; "
+			"text"		"AK47"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	"give rifle_sg552; "
+			"text"		"SIG SG552"
+		}	
+		"NorthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}	
+	}
+	//--------------------------------------------------------------
+	"CombatSnipers"
+	{
+		"Center"
+		{
+			"command"	"+mouse_menu WeaponMenu"
+			"text"		"[RETURN]"
+		}
+		"North"
+		{
+			"command"	"give sniper_military; "
+			"text"		"Military Sniper Rifle"
+		}
+		"NorthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"East"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}	
+		"South"
+		{
+			"command"	"give sniper_awp; "
+			"text"		"Magnum Sniper Rifle"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	""
+			"text"		"-"
+		}	
+		"NorthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}	
+	}
+	//--------------------------------------------------------------
+	"SpecialWeapons"
+	{
+		"Center"
+		{
+			"command"	"upgrade_add LASER_SIGHT; "
+			"text"		"Laser Sights"
+		}
+		"North"
+		{
+			"command"	"give pistol; "
+			"text"		"Dual Pistols"
+		}
+		"NorthEast"
+		{
+			"command"	"give rifle_m60; "
+			"text"		"Machine Gun"
+		}
+		"East"
+		{
+			"command"	"upgrade_add INCENDIARY_AMMO; "
+			"text"		"Incendiary Ammo"
+		}
+		"SouthEast"
+		{
+			"command"	"give chainsaw; "
+			"text"		"Chainsaw"
+		}	
+		"South"
+		{
+			"command"	"give pistol_magnum; "
+			"text"		"Magnum"
+		}
+		"SouthWest"
+		{
+			"command"	"give electric_guitar; "
+			"text"		"Guitar"
+		}
+		"West"
+		{
+			"command"	"upgrade_add EXPLOSIVE_AMMO; "
+			"text"		"Explosive Ammo"
+		}	
+		"NorthWest"
+		{
+			"command"	"give grenade_launcher; "
+			"text"		"Grenade Launcher"
+		}	
+	}
+	//--------------------------------------------------------------
+	"HuntingRifles"
+	{
+		"Center"
+		{
+			"command"	"+mouse_menu WeaponMenu"
+			"text"		"[RETURN]"
+		}
+		"North"
+		{
+			"command"	"give hunting_rifle; "
+			"text"		"Hunting Rifle"
+		}
+		"NorthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"East"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}	
+		"South"
+		{
+			"command"	"give sniper_scout; "
+			"text"		"Steyr Scout"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	""
+			"text"		"-"
+		}	
+		"NorthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}	
+	}
+	//--------------------------------------------------------------
+	"SubmachineGuns"
+	{
+		"Center"
+		{
+			"command"	"+mouse_menu WeaponMenu"
+			"text"		"[RETURN]"
+		}
+		"North"
+		{
+			"command"	"give smg; "
+			"text"		"Submachine Gun"
+		}
+		"NorthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"East"
+		{
+			"command"	"give smg_mp5; "
+			"text"		"H&K MP5"
+		}
+		"SouthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}	
+		"South"
+		{
+			"command"	"give smg_silenced; "
+			"text"		"Silenced SMG"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	""
+			"text"		"-"
+		}	
+		"NorthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}	
+	}
+	//--------------------------------------------------------------
+	"PumpShotguns"
+	{
+		"Center"
+		{
+			"command"	"+mouse_menu WeaponMenu"
+			"text"		"[RETURN]"
+		}
+		"North"
+		{
+			"command"	"give pumpshotgun; "
+			"text"		"Pump Shotgun"
+		}
+		"NorthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"East"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}	
+		"South"
+		{
+			"command"	"give shotgun_chrome; "
+			"text"		"Chrome Shotgun"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	""
+			"text"		"-"
+		}	
+		"NorthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}	
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	//# Item Menu
+	//--------------------------------------------------------------
+	"ItemMenu"
+	{
+		"Center"
+		{
+			"command"	"+mouse_menu Upgrades"
+			"text"		"[Upgrades]"
+		}
+		"North"
+		{
+			"command"	"+mouse_menu Explosives"
+			"text"		"[Explosives]"
+		}
+		"NorthEast"
+		{
+			"command"	"give first_aid_kit; "
+			"text"		"Medkit"
+		}
+		"East"
+		{
+			"command"	"give defibrillator; "
+			"text"		"Defibrillator"
+		}
+		"SouthEast"
+		{
+			"command"	"give pipe_bomb; "
+			"text"		"Pipe Bomb"
+		}
+		"South"
+		{
+			"command"	"give vomitjar; "
+			"text"		"Bile Bomb"
+		}
+		"SouthWest"
+		{
+			"command"	"give molotov; "
+			"text"		"Molotov"
+		}
+		"West"
+		{
+			"command"	"give adrenaline; "
+			"text"		"Adrenaline"
+		}
+		"NorthWest"
+		{
+			"command"	"give pain_pills; "
+			"text"		"Pain Pills"
+		}
+	}	
+	//--------------------------------------------------------------
+	"Upgrades"
+	{
+		"Center"
+		{
+			"command"	"+mouse_menu ItemMenu"
+			"text"		"[RETURN]"
+		}
+		"North"
+		{
+			"command"	"upgrade_add LASER_SIGHT; "
+			"text"		"Laser Sights"
+		}
+		"NorthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"East"
+		{
+			"command"	"give upgradepack_incendiary; "
+			"text"		"Incendiary Pack"
+		}
+		"SouthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}	
+		"South"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	"give upgradepack_explosive; "
+			"text"		"Explosive Pack"
+		}	
+		"NorthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}	
+	}
+	//--------------------------------------------------------------
+	"Explosives"
+	{
+		"Center"
+		{
+			"command"	"+mouse_menu ItemMenu"
+			"text"		"[RETURN]"
+		}
+		"North"
+		{
+			"command"	"give fireworkcrate; "
+			"text"		"Fireworks"
+		}
+		"NorthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"East"
+		{
+			"command"	"give propanetank; "
+			"text"		"Propane"
+		}
+		"SouthEast"
+		{
+			"command"	""
+			"text"		"-"
+		}	
+		"South"
+		{
+			"command"	"give gascan; "
+			"text"		"Gas Can"
+		}
+		"SouthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}
+		"West"
+		{
+			"command"	"give oxygentank; "
+			"text"		"Oxygen"
+		}	
+		"NorthWest"
+		{
+			"command"	""
+			"text"		"-"
+		}	
+	}
+	//--------------------------------------------------------------
+
+	//--------------------------------------------------------------
+	//# Admin Menu
+	//--------------------------------------------------------------
+	"AdminMenu"
+	{
+		"Center"
+		{
+			"command"	"picker; "
+			"text"		"Info"
+		}
+		"East"
+		{
+			"command"	"ent_rotate -22.5; "
+			"text"		"45/2 Degrees Right"
+		}
+		"West"
+		{
+			"command"	"ent_rotate 22.5; "
+			"text"		"45/2 Degrees Left"
+		}
+		"North"
+		{
+			"command"	"noclip; "
+			"text"		"Noclip On/Off"
+		}
+		"NorthEast"
+		{
+			"command"	"toggle sv_cheats; "
+			"text"		"Cheats On/Off"
+		}
+		"SouthEast"
+		{
+			"command"	"nb_move_to_cursor; "
+			"text"		"Move Survivors"
+		}
+		"South"
+		{
+			"command"	"ent_remove; "
+			"text"		"Delete"
+		}
+		"SouthWest"
+		{
+			"command"	"warp_all_survivors_here; "
+			"text"		"Warp Survivors"
+		}
+		"NorthWest"
+		{
+			"command"	"directortoggle; "
+			"text"		"Director On/Off"
+		}
+	}
+	//--------------------------------------------------------------
+}
