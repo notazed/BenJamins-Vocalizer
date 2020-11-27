@@ -1,7 +1,7 @@
 # BenJamin's Vocalizer - Advanced
 Left 4 Dead 2 Custom Vocalizer with character dialogue,  character selector, versus callouts, and admin & bot commands, including item spawner and map selector. Inspired by Doktor Haus's Vocalizer and C2's VOX Vocalizer.
 
-**AS OF RECENT L4D2 UPDATE, PRE-PACKAGED ADDON CONFIGS NO LONGER WORK. FOLLOW THE STEPS BELOW TO COPY THE CFG FILE YOURSELF.**
+**AS OF RECENT L4D2 UPDATE, PRE-PACKAGED ADDON CONFIGS NO LONGER WORK. FOLLOW THE STEPS BELOW TO COPY THE CFG FILES YOURSELF.**
 
 #### Instructions:
 1. Subscribe from the workshop
