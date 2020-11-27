@@ -7,8 +7,8 @@ If you receive this error **"exec: couldn't exec vocalizer"**, you will need to 
 
 You will also want to create a new blank **"autoexec.cfg"** file in that same folder (if you don't already have one) and add a new line with **"exec vocalizer.cfg"**, again saving the file as a **".CFG"**. This way, the game automatically looks for the autoexec file and runs the vocalizer script on startup every time.
 
-##### TL:DR Instructions:
-1. Subcribe from the workshop
+#### TL:DR Instructions:
+1. Subscribe from the workshop
 2. Close your game
 3. Copy the **vocalizer.cfg** file into your **"...\Steam\steamapps\common\Left 4 Dead 2\left4dead2\cfg"** folder
 4. Create an **autoexec.cfg** file in the same folder (if you don't already have one) and add a new line **"exec vocalizer.cfg"** (save as autoexec.cfg NOT autoexec.cfg.txt)
