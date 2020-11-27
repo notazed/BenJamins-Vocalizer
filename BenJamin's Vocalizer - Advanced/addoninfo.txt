@@ -2,7 +2,7 @@
 {
 	"addonSteamAppID"					"550"	//Steam App ID: 500 for Left 4 Dead, 550 for Left 4 Dead 2
 	"addonTitle"						"BenJamin's Vocalizer - Advanced"	//Title of the addon, ~20 characters maximum
-	"addonVersion"						"1.0"	//Version number of the addon, <major>.<minor>
+	"addonVersion"						"2.0"	//Version number of the addon, <major>.<minor>
 	"addonTagline"						""	//Tagline/wrap-up short description, ~100 characters maximum
 	"addonAuthor"						"BenJamin'"	//Name of the author
 	"addonAuthorSteamID"				""	//(Optional) Steam ID of author. We use this to construct a URL to the author's page.
